@@ -1,0 +1,2 @@
+  Personal Resume :
+	To Run: Table_datagen/personal_generator/gen_resume.sh 100 10 gen_data/

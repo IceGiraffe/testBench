@@ -1,0 +1,9 @@
+Input	kronecker_graph.txt
+Command line options
+	i:kronecker_graph.txt
+	n0:2
+	gi:100
+Loglikelihood	 -14396.76
+Absolute error (based on expected number of edges)	0.010465
+RunTime	136.408
+Estimated initiator	[0.904549, 0.57998; 0.601506, 0.124348]

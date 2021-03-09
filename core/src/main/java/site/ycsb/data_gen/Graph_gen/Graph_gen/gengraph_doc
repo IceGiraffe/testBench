@@ -1,0 +1,3 @@
+./gengraph para1 para2
+para1--input file name
+para2--iterations

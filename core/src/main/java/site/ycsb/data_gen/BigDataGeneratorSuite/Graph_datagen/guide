@@ -1,0 +1,8 @@
+  Amazon un-weighted graph:
+	To Run: Graph_datagen/gen_weighted_graph.sh
+  Amazon weighted graph:
+    To Run: Graph_datagen/gen_kronecker_graph -o:amazon_gen_16.txt -m:"0.9532 0.5502; 0.4439 0.2511" -i:16
+  Facebook graph:
+    To Run: Graph_datagen/gen_kronecker_graph -o:facebook_g_16.txt -m:"0.9999 0.5887; 0.6254 0.3676" -i:16
+  Google graph :
+    To Run: Graph_datagen/gen_kronecker_graph -o:google_g_16.txt -m:"0.8305 0.5573; 0.4638 0.3021" -i:16

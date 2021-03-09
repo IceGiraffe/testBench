@@ -1,0 +1,1 @@
+./gengraph.sh inputfile iternum 

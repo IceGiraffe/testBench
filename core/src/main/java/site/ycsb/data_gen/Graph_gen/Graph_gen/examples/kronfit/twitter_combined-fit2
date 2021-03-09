@@ -1,0 +1,12 @@
+Input	twitter_combined.txt
+Command line options
+	i:twitter_combined.txt
+	m:0.9
+	0.6;
+	0.6
+	0.1
+	gi:100
+Loglikelihood	-14373405.50
+Absolute error (based on expected number of edges)	0.017670
+RunTime	-1975.09
+Estimated initiator	[0.9999, 0.552162; 0.518139, 0.242908]

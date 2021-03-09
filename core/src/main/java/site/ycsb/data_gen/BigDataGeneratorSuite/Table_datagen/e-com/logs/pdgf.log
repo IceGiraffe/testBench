@@ -1,0 +1,76 @@
+DEBUG main pdgf.Controller - execution root folder: /ljw/test1/BigDataBench_V3.1.1_Hadoop_Hive/BigDataGeneratorSuite/Table_datagen/e-com
+DEBUG main pdgf.Controller - found plugin folder: /ljw/test1/BigDataBench_V3.1.1_Hadoop_Hive/BigDataGeneratorSuite/Table_datagen/e-com/lib
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: javassist.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: xercesImpl.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: resolver.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: xml-apis.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: serializer.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: lucene-spellchecker-3.6.0.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: log4j-1.2.16.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: lucene-core-3.6.0.jar to classpath
+DEBUG main pdgf.util.ClassLoading.PluginLoader - Adding File: pdgf.jar to classpath
+INFO main pdgf.Controller - ################################################################################
+                     PDGF_Demo(single cpu) v3.0_SVNrev88_b4
+                       Parallel Data Generation Framework
+    by: Frank M., Danisch M., Rabl T. http://www.paralleldatageneration.org
+################################################################################
+for a command overview start with commandline parameter: -help
+or type "help" in the built in shell: PDGF:> 
+
+INFO main pdgf.actions.SetCloseWhenDoneAction - Set closeWhenDone from: false to: true
+INFO main pdgf.actions.SetScaleFactorAction - Set project main scale factor from -notSet- to 140
+WARN main pdgf.core.dbSchema.Project - set XML <property name="SF"> to: 140.0
+DEBUG main pdgf.actions.LoadConfigAction - Config file "demo-schema.xml" not found. Searching for file in standard config file dir: config/
+INFO main pdgf.actions.LoadConfigAction - 
+Loading cfg file: /ljw/test1/BigDataBench_V3.1.1_Hadoop_Hive/BigDataGeneratorSuite/Table_datagen/e-com/config/demo-schema.xml
+INFO main pdgf.core.dbSchema.Project - Loading  <schema> config file
+INFO main pdgf.core.dbSchema.Project - 12: XML <property name="SF">5.0E7 was already defined in config file or is manually overridden by a user set commandline argument. Currently assigned value: '140.0' and will remain unchanged at this value
+DEBUG main pdgf.core.dbSchema.Project - Load time for config file (ms):72
+INFO main pdgf.core.dbSchema.Project - Loading sucessfull.
+DEBUG main pdgf.actions.LoadConfigAction - Config file "demo-generation.xml" not found. Searching for file in standard config file dir: config/
+INFO main pdgf.actions.LoadConfigAction - 
+Loading cfg file: /ljw/test1/BigDataBench_V3.1.1_Hadoop_Hive/BigDataGeneratorSuite/Table_datagen/e-com/config/demo-generation.xml
+INFO main pdgf.core.dbSchema.Project - Loading  <generation> config file
+DEBUG main pdgf.output.FileOutputSkeleton - CSVRowOutput - use File ending for output: .txt
+DEBUG main pdgf.core.dbSchema.Project - Load time for config file (ms):17
+INFO main pdgf.core.dbSchema.Project - Loading sucessfull.
+INFO main pdgf.core.dbSchema.Project - All required config files are loaded.
+INFO main pdgf.core.dataGenerator.DataGenerator - Initializing system...
+DEBUG main pdgf.core.dataGenerator.DataGenerator - preinitialization of project finished. Next task: cloning per worker
+INFO main pdgf.core.dataGenerator.DataGenerator - initialized 0h:00m:00s:299ms
+INFO main pdgf.core.dataGenerator.DataGenerator - Starting data generation proccess...
+INFO main pdgf.core.dataGenerator.scheduler.MetaScheduler - 
+generating 1/2 "OS_ORDER"	  rows: 14000000 of 14000000
+DEBUG Worker0/1 pdgf.core.dataGenerator.worker.AbstractWorker - Node: 1 worker 1/1 is now running
+DEBUG main pdgf.core.dataGenerator.scheduler.MetaScheduler - Data generation procces started on node 1/1. Created 1 workers for this task.
+DEBUG Worker0/1 pdgf.core.dataGenerator.scheduler.DefaultScheduler - UpdateScheduler: Rows: 13999999 fields per second: 3647099
+INFO :PausedThread pdgf.core.dataGenerator.scheduler.MetaScheduler -   finished 1/2 "OS_ORDER"	  in: 0h:00m:12s:885ms size: 366.0 MiB speed: 28.4 MiB/s
+INFO :PausedThread pdgf.core.dataGenerator.scheduler.MetaScheduler - 
+generating 2/2 "OS_ORDER_ITEM"	  rows: 14000000 of 14000000
+DEBUG Worker0/1 pdgf.core.dataGenerator.scheduler.DefaultScheduler - UpdateScheduler: Rows: 13999999 fields per second: 2066878
+INFO :PausedThread pdgf.core.dataGenerator.scheduler.MetaScheduler -   finished 2/2 "OS_ORDER_ITEM"	  in: 0h:00m:40s:644ms size: 675.3 MiB speed: 16.6 MiB/s
+INFO :PausedThread pdgf.core.dataGenerator.DataGenerator - All work done
+DEBUG :PausedThread pdgf.core.dataGenerator.scheduler.MetaScheduler - Node 1: All workers stopped successfully!
+DEBUG :PausedThread pdgf.core.dataGenerator.DataGenerator - Node 1 Max time of a worker: 0h:00m:53s:889ms average time: 0h:00m:53s:889ms
+DEBUG :PausedThread pdgf.core.dataGenerator.DataGenerator - Node 1 Generator overall time: 0h:00m:53s:898ms
+INFO :PausedThread pdgf.core.dataGenerator.DataGenerator - Statistics
+=========
+Overall time	0h:00m:53s:898ms
+Generated	1.0 GiB
+Speed		19.3 MiB/s
+
+INFO :PausedThread pdgf.core.dataGenerator.DataGenerator - Node 1. logged detailed processing statistics to file:/ljw/test1/BigDataBench_V3.1.1_Hadoop_Hive/BigDataGeneratorSuite/Table_datagen/e-com/logs/GenerationStatistics_1.csv
+INFO :PausedThread pdgf.core.dataGenerator.DataGenerator - Node 1. logged detailed processing statistics to file:/ljw/test1/BigDataBench_V3.1.1_Hadoop_Hive/BigDataGeneratorSuite/Table_datagen/e-com/logs/TableGenerationStatistics_1.csv
+DEBUG :PausedThread pdgf.core.dataGenerator.DataGenerator - 1432804769151;1;1;item;140.0;1;ALL#SCHEDULERS;6172640;0;0;0;0;0;6172640;100.0;1.011
+1432804769151;1;1;item;140.0;1;ALL#worker#0;50156690338;37340000000;0;0;4;1365000000;51521690338;97.351;94.059
+1432804769151;1;1;item;140.0;1;All#PausedThread;94091273;0;0;0;0;0;94091273;100.0;1.175
+1432804769151;1;1;item;140.0;1;pdgf.core.dataGenerator.scheduler.DefaultScheduler#OS_ORDER;4043796;0;0;0;0;0;4043796;100.0;1.008
+1432804769151;1;1;item;140.0;1;pdgf.core.dataGenerator.scheduler.DefaultScheduler#OS_ORDER_ITEM;400908;0;0;0;0;0;400908;100.0;1.001
+1432804769151;1;1;item;140.0;1;pdgf.core.dataGenerator.worker.RowWorker#worker#0;50156537940;37340000000;0;0;4;1365000000;51521537940;97.351;94.058
+item;item;item;
+1432804769151;1;1;140.0;1;ALL;53898;1091896831;19.3 MiB/s;
+1432804769151;1;1;140.0;1;OS_ORDER;12885;383777780;28.4 MiB/s;
+1432804769151;1;1;140.0;1;OS_ORDER_ITEM;40644;708119051;16.6 MiB/s;
+
+INFO :PausedThread pdgf.core.dataGenerator.DataGenerator - Time to stop and flush everything: 0h:00m:00s:362ms
+DEBUG ShutdownHook pdgf.core.dataGenerator.scheduler.MetaScheduler - Node 1: All workers stopped successfully!
